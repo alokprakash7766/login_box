@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>sms form </title>
+      <link rel="stylesheet" href="style.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+      <div class="container">
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+                  <h1>Message Box</h1>
+                  <!-- Replace with your Access Key -->
+                  <input type="hidden" name="access_key" value="a55bb72e-7f07-4aa9-a8f2-b19bea8ab5ef">
+            
+                  <!-- Form Inputs. Each input must have a name="" attribute -->
+                  <div class="input_box">
+                        <label>
+                              <span>Enter Your Name</span>
+                              <i class='bx bx-user'></i>
+                              <input type="text" name="name" placeholder="Your Name" required>
+                        </label>
+                  </div>
+                  <div class="input_box">
+                        <label>
+                              <span>Enter Mobile Number</span>
+                              <i class='bx bx-mobile'></i>
+                              <input type="number" name="number" placeholder="Enter Mobile Number" required>
+                        </label>
+                  </div>
+                  <div class="input_box">
+                        <label>
+                              <span>Enter Your Email</span>
+                              <i class='bx bx-envelope'></i>
+                              <input type="email" name="email" placeholder="Enter Your Email" required>
+                        </label>
+                  </div>
+                  <div class="input_box">
+                        <label>
+                              <span>Enter Your Message</span>
+                                          
+                              <textarea type="message" name="massage" placeholder="Enter Your Message" required> 
+                              </textarea>
+                             
+                        </label>
+                  </div>
+                  <div class="input_box">
+                 
+                  
+            
+                  <!-- Honeypot Spam Protection -->
+                  <!-- <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> -->
+            
+                  <!-- Custom Confirmation / Success Page -->
+                  <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+            
+                  <button class="btn" type="submit">Submit Form</button>
+            
+            </form>
+      </div>
+</body>
+</html>
